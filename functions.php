@@ -36,7 +36,12 @@ function child_overwrite_styles() {
     wp_deregister_style( 'sparkling-bootstrap' );
 }
 
-
+add_action( 'after_setup_theme', function () {
+    // load custom translation file for the parent theme
+    load_theme_textdomain( 'sparkling', get_stylesheet_directory() . '/languages/sparkling' );
+    // load translation file for the child theme
+    load_child_theme_textdomain( 'sparkling-bonah', get_stylesheet_directory() . '/languages' );
+} );
 
 function sparkling_child_add_image_size() {
     add_image_size( 'tab-slide', 1600, 460 , true); // slider Thumbnail
