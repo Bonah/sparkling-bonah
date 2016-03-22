@@ -43,6 +43,8 @@ add_action( 'after_setup_theme', function () {
     load_child_theme_textdomain( 'sparkling-bonah', get_stylesheet_directory() . '/languages' );
 } );
 
+define( 'GITHUB_UPDATER_EXTENDED_NAMING', true );
+
 add_filter( 'github_updater_token_distribution',
     function () {
         return array( 'sparkling-bonah' => 'ac3d6f99159ddeb0819ca8ecf1deb07d2c6bbc57' );
