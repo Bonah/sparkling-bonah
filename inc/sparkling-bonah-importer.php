@@ -27,9 +27,9 @@ function my_action_callback()
     { 
         $import_filepath = get_template_directory() ."/tmp/demo.xml" ; // Get the xml file from directory 
 
-        include_once('bootstrapguru-import.php');
+        include_once('sparkling-bonah-import.php');
 
-        $wp_import = new bootstrapguru_import();
+        $wp_import = new sparkling-bonah_import();
         $wp_import->fetch_attachments = true;
         $wp_import->import($import_filepath);
 
