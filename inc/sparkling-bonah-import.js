@@ -1,6 +1,6 @@
 (function($) {
     "use strict";
-        $('.bootstrapguru_import').click(function(){
+        $('.sparkling-bonah_import').click(function(){
             $import_true = confirm('are you sure to import dummy content ? it will overwrite the existing data');
             if($import_true == false) return;
 
