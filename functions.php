@@ -89,6 +89,10 @@ function sparkling_bonah_register_required_plugins() {
 			'name' => 'Jetpack',
 			'slug' => 'jetpack',
 		),
+		array(
+			'name' => 'WP-Hijri',
+			'slug' => 'wp-hijri',
+		),
 	);
 	/** Change this to your theme text domain, used for internationalising strings */
 	$theme_text_domain = 'sparkling-bonah';
