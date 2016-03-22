@@ -1,4 +1,4 @@
-class bootstrapguru_import extends WP_Import
+class sparkling-bonah_import extends WP_Import
 {
     function check()
     {
