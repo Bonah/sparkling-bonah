@@ -93,6 +93,10 @@ function sparkling_bonah_register_required_plugins() {
 			'name' => 'WP-Hijri',
 			'slug' => 'wp-hijri',
 		),
+		array(
+			'name' => 'Contact Form 7',
+			'slug' => 'contact-form-7',
+		),
 	);
 	/** Change this to your theme text domain, used for internationalising strings */
 	$theme_text_domain = 'sparkling-bonah';
