@@ -45,12 +45,6 @@ add_action( 'after_setup_theme', function () {
 
 define( 'GITHUB_UPDATER_EXTENDED_NAMING', true );
 
-add_filter( 'github_updater_token_distribution',
-    function () {
-        return array( 'sparkling-bonah' => 'ac3d6f99159ddeb0819ca8ecf1deb07d2c6bbc57' );
-    } );
-add_filter( 'github_updater_hide_settings', '__return_true' );
-    
 function sparkling_child_add_image_size() {
     add_image_size( 'tab-slide', 1600, 460 , true); // slider Thumbnail
 }
