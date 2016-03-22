@@ -43,6 +43,12 @@ add_action( 'after_setup_theme', function () {
     load_child_theme_textdomain( 'sparkling-bonah', get_stylesheet_directory() . '/languages' );
 } );
 
+add_filter( 'github_updater_token_distribution',
+    function () {
+        return array( 'sparkling-bonah' => 'ac3d6f99159ddeb0819ca8ecf1deb07d2c6bbc57' );
+    } );
+add_filter( 'github_updater_hide_settings', '__return_true' );
+    
 function sparkling_child_add_image_size() {
     add_image_size( 'tab-slide', 1600, 460 , true); // slider Thumbnail
 }
@@ -68,12 +74,12 @@ function sparkling_bonah_register_required_plugins() {
 	 */
 	$plugins = array(
 		/** This is an example of how to include a plugin pre-packaged with a theme */
-		/*array(
-			'name'     => 'TGM Example Plugin', // The plugin name
-			'slug'     => 'tgm-example-plugin', // The plugin slug (typically the folder name)
-			'source'   => get_stylesheet_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source
-			'required' => false,
-		),*/
+		array(
+			'name'     => 'Github Updater Plugin', // The plugin name
+			'slug'     => 'github-updater', // The plugin slug (typically the folder name)
+			'source'   => get_stylesheet_directory() . '/lib/plugins/github-updater-5.4.0.zip', // The plugin source
+			'required' => true,
+		),
 		/** This is an example of how to include a plugin from the WordPress Plugin Repository */
 		array(
 			'name' => 'Easy Bootstrap Shortcode',
