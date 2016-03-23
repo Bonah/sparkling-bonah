@@ -191,8 +191,8 @@ function sparkling_options_display_sidebar() { ?>
             <div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/Bonah.Net' ); ?>" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
             <div class="tw-follow" ><a href="https://twitter.com/bonah" class="twitter-follow-button" data-show-count="false">تابع @bonah</a></div>
           </div>
-            <p><b><a href="<?php echo esc_url( 'http://themes.bonah.net/support/sparkling' ); ?>"><?php esc_html_e('Sparkling Documentation','sparkling'); ?></a></b></p>
-            <p><?php _e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://themes.bonah.net/forums' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
+            <p><b><a href="<?php echo esc_url( 'http://market.bonah.net/documentation/sparkling/' ); ?>"><?php esc_html_e('Sparkling Documentation','sparkling'); ?></a></b></p>
+            <p><?php _e('The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','sparkling') ?> <a href="<?php echo esc_url( 'http://market.bonah.net/support/forum/sparkling/' ); ?>"><?php esc_html_e('Colorlib support forum','sparkling') ?></a>.</p>
             <p><?php esc_html_e('If you like this theme, I\'d appreciate any of the following:','sparkling') ?></p>
             <ul>
               <li><a class="button" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/sparkling?filter=5' ); ?>" title="<?php esc_attr_e('Rate this Theme', 'sparkling'); ?>" target="_blank"><?php printf(esc_html__('Rate this Theme','sparkling')); ?></a></li>
