@@ -149,8 +149,6 @@ $typography_options = array(
         'color'  => true
 );
 
-require get_template_directory() . '/inc/extras-ar.php';
-
 } add_action( 'after_setup_theme', 'the_theme_setup' );
 
 function sparkling_featured_slider() {
