@@ -48,7 +48,7 @@ define( 'GITHUB_UPDATER_EXTENDED_NAMING', true );
 function sparkling_child_add_image_size() {
     add_image_size( 'tab-slide', 1600, 460 , true); // slider Thumbnail
 }
-add_action( 'after_setup_theme', 'sparkling_add_image_size', 11 );
+add_action( 'after_setup_theme', 'sparkling_child_add_image_size', 11 );
 
 // END ENQUEUE PARENT ACTION
 
